@@ -24,22 +24,10 @@ jobs:
         with:
           python-version: '3.10'
 
-    
-      
-
       - name: Create and start virtual environment
         run: |
           python -m venv venv
           source venv/bin/activate
-
-      - name: install pyodbc
-        run: pip install pyodbc
-
-      - name: install setuptools and wheels
-        run: pip install setuptools wheel
-
-      - name: install mako
-        run: pip install Mako --use-pep517
       
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -80,9 +68,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D3C1FDCBBCA34FE69E25C8C524C2C115 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_A7565D5321574447988374C93BACCA3F }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_141617F38E4B447EA854561109EFA41C }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B44AC23FF2454440BFB0B05C884AC9DE }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F36B124CFE6E433F9F4F903357A56F0B }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2886FF14F49F448FAAC11F30EA5E0BC4 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
