@@ -12,9 +12,9 @@ app = Flask(__name__)
 app.config.from_object(Config)
 # loggin
 
-app.logger.setLevel(logging.DEBUG)
+app.logger.setLevel(logging.WARNING)
 streamHandler = logging.StreamHandler()
-streamHandler.setLevel(logging.DEBUG)
+streamHandler.setLevel(logging.WARNING)
 app.logger.addHandler(streamHandler)
 
 
