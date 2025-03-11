@@ -6,10 +6,10 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'a18521f1-f3f9-4823-aedf-5d3e3afd162a'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'images11aze'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'ZYQDTTcfjMlPiLQTkEvegH3DL9+i4t7tbm7ktL12540E1gCZrbnpp3afg9lnfH0OQaly5hc66IrG+AStFVsptw=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'B3+sE6NsgSFWYel4Lx6EeXbEk0aKpHUZyLSqbk0ApLgprqGms398lrcgDp4MYkAlZnro3+vZEcM7+ASt4XgwPw=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cms-aze.database.windows.net'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cms.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'cms'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'CMS4dmin'
