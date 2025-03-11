@@ -15,9 +15,9 @@ app.config.from_object(Config)
 
 logging.Logger.root.level = 10
 logging.debug("Debug message here")
-app.logger.setLevel(logging.DEBUG)
+app.logger.setLevel(logging.INFO)
 streamHandler = logging.StreamHandler()
-streamHandler.setLevel(logging.DEBUG)
+streamHandler.setLevel(logging.INFO)
 app.logger.addHandler(streamHandler)
 
 
