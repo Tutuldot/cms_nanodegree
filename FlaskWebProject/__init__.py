@@ -12,6 +12,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 # loggin
 
+wsgi_app = app.wsgi_app
 app.logger.setLevel(logging.WARNING)
 streamHandler = logging.StreamHandler()
 streamHandler.setLevel(logging.WARNING)
