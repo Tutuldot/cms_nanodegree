@@ -3,13 +3,13 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
-    SECRET_KEY = os.environ.get('SECRET_KEY') or '32245e65-87f7-4797-b4d3-2c61795c7df0'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or '4280d625-7c65-4f8a-bad4-c6e33c60bc42'
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'images11aze'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'B3+sE6NsgSFWYel4Lx6EeXbEk0aKpHUZyLSqbk0ApLgprqGms398lrcgDp4MYkAlZnro3+vZEcM7+ASt4XgwPw=='
+    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'images11'
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'g0uljbbz8lq8KNE3TGihla4IfEb6roW9WCDRuXybFRsFd9a2ekrgxJOeWJftpnngBtC/pV8EBhDV+ASt5l1Etg=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cms.database.windows.net'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'cmsaze.database.windows.net'
     SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'cms'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'cmsadmin'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'CMS4dmin'
@@ -19,7 +19,7 @@ class Config(object):
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "umv8Q~bQG5GEHmCchuIKkf2GioPiFAIhaMbvyc2B"
+    CLIENT_SECRET = "en58Q~vT2YmiMiG072AogVEpbA.ZczkOziWNRde-"
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -30,7 +30,7 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "34f481c3-524c-4189-84db-bc3ec37cd74e"
+    CLIENT_ID = "95a5a097-e6d1-46ae-ab09-5f6aa286d009"
 
     REDIRECT_PATH = "/getAToken"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
